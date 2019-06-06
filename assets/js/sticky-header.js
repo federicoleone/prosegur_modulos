@@ -38,7 +38,7 @@ $(document).ready(function() {
 	        didScroll = false;
 	    }
 	}, 250);
-
+/*
 	function hasScrolled() {
 	    var st = $(this).scrollTop();
 	    
@@ -60,7 +60,7 @@ $(document).ready(function() {
 	    
 	    lastScrollTop = st;
 	}
-	
+*/
 
 });
 
