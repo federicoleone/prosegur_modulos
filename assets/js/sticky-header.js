@@ -22,7 +22,6 @@ $(document).ready(function() {
    	   $('.cx-side-button-group').show();
 	});
 
-/*
 	// Hide Header on on scroll down
 	var didScroll;
 	var lastScrollTop = 0;
@@ -39,7 +38,6 @@ $(document).ready(function() {
 	        didScroll = false;
 	    }
 	}, 250);
-
 
 	function hasScrolled() {
 	    var st = $(this).scrollTop();
@@ -62,7 +60,7 @@ $(document).ready(function() {
 	    
 	    lastScrollTop = st;
 	}
-*/	
+	
 
 });
 
