@@ -4,11 +4,14 @@ $(document).ready(function() {
         var value = $(this).scrollTop();
         var resolution= $(window).width();
 
-        if ( value > 350 && resolution > 992 ){ 
-            $('.sticky-header-fixed').fadeIn();
-        } else {
-            $('.sticky-header-fixed').fadeOut();
+        if(resolution > 992){
+	        if ( value > 400){ 
+	            $('.sticky-header-fixed').fadeIn();
+	        } else {
+	            $('.sticky-header-fixed').fadeOut('fast');
+	        }
         }
+
     });
 
     // Sticky Footer
@@ -22,6 +25,7 @@ $(document).ready(function() {
    	   $('.cx-side-button-group').show();
 	});
 
+/*
 	// Hide Header on on scroll down
 	var didScroll;
 	var lastScrollTop = 0;
@@ -38,7 +42,7 @@ $(document).ready(function() {
 	        didScroll = false;
 	    }
 	}, 250);
-/*
+
 	function hasScrolled() {
 	    var st = $(this).scrollTop();
 	    

@@ -38565,21 +38565,22 @@ map-fullwidth {
 /* sticky-header */
 .sticky-header{
     background-color: #fff;
+    height: auto;
+}
+
+.sticky-header-initial{
+    position: relative;
+    box-shadow: none;
+}
+
+.sticky-header-fixed{
+    position: fixed;
+    display: none;
     -webkit-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.1);
     box-shadow: 0px 5px 18px 0px rgba(0,0,0,0.1);
-    height: auto;
-    position: fixed;
     z-index: 7;
-    display: none;
 }
-
-@media(max-width:992px) {
-    .sticky-header{
-        display: none !important;
-    }    
-}
-
 
     .sticky-header i,
     .sticky-header h3{
@@ -38650,13 +38651,28 @@ map-fullwidth {
             border: none;
         }
 
-
 @media(max-width:992px) {
-    .sticky-header{
-        display: none;
+    .header-prosegur.sticky-header.sticky-header-fixed.sticky-header-sidebar,
+    .header-prosegur.sticky-header.sticky-header-initial{
+        display: none !important;
+    }    
+
+    .header-prosegur.sticky-header.sticky-header-fixed{
+        display: block !important;
+    }    
+
+    .header-prosegur.sticky-header{
+        background-color:#ffce07;
     }
 
+        .header-prosegur.sticky-header .logo{
+            margin: auto;
+            width: 60%; 
+        }
 
+        .header-prosegur.sticky-header .menu-right{
+            display: none;
+        }
 }
 
 /* Sticky Footer */
