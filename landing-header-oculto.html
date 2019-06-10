@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- PLUGINS MODULO -->
+    <link href="assets/plugins/flexslider/flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/ionicons/css/ionicons.css" rel="stylesheet" type="text/css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,900' rel='stylesheet' type='text/css'>
+    <link href="assets/css/all-prosegur.css" rel="stylesheet" type="text/css" />
+
+    <script>
+        if (!window._genesys) window._genesys = {};
+        if (!window._gt) window._gt = [];
+
+        window._genesys.widgets = {
+            main: {
+
+                theme: "prosegur",
+                lang: "es",
+                i18n: {
+                    "es": {
+                        "webchat": {
+                            ChatButton: "¿Podemos ayudarte?",
+                            ChatStarted: "Inicio de conversación",
+                            ChatEnded: "Conversación finalizada",
+                            AgentNameDefault: "Agent",
+                            AgentConnected: "<%Agent%> Conectado",
+                            AgentDisconnected: "<%Agent%> Desconectado",
+                            SupervisorNameDefault: "Supervisor",
+                            SupervisorConnected: "<%Agent%> Conectado",
+                            SupervisorDisconnected: "<%Agent%> Desconectado",
+                            AgentTyping: "...",
+                            AgentUnavailable: "Disculpe. No se encuentran operadores disponibles. Por favor, intente más tarde",
+                            ChatTitle: "Asesor Online",
+                            ChatEnd: "X",
+                            ChatClose: "X",
+                            ChatMinimize: "Min",
+                            ChatFormFirstName: "Nombre",
+                            ChatFormLastName: "Apellidos",
+                            ChatFormNickname: "Usuario",
+                            ChatFormEmail: "Email",
+                            ChatFormSubject: "Asunto",
+                            ChatFormPlaceholderFirstName: "Requerido",
+                            ChatFormPlaceholderLastName: "Requerido",
+                            ChatFormPlaceholderNickname: "Opcional",
+                            ChatFormPlaceholderEmail: "Opcional",
+                            ChatFormPlaceholderSubject: "Opcional",
+                            ChatFormSubmit: "Comenzar",
+                            ChatFormCancel: "Cancelar",
+                            ChatFormClose: "Cerrar",
+                            ChatInputPlaceholder: "Escriba su mensaje aquí",
+                            ChatInputSend: "Enviar",
+                            ChatEndQuestion: "Esta seguro que desea terminar esta sesión?",
+                            ChatEndCancel: "Cancelar",
+                            ChatEndConfirm: "Finalizar conversación",
+                            ConfirmCloseWindow: "Esta seguro que desea terminar esta sesión?",
+                            ConfirmCloseCancel: "Cancelar",
+                            ConfirmCloseConfirm: "Cerrar",
+                            IdleMessageClose: "Su sesión de chat a finalizado debido a inactividad"
+                        }
+                    }
+                }
+
+            },
+            webchat: {
+                dataURL: "https://www.prosegur.es/gms/genesys/2/chat/chat-ES_TMK",
+                emojis: false,
+                xhrFields: {
+                    withCredentials: false
+                },
+                userData: {},
+                chatButton: {
+
+                    enabled: true,
+                    template: false,
+                    openDelay: 1000,
+                    effectDuration: 300,
+                    hideDuringInvite: true
+                }
+            },
+        };
+
+        window._genesys.widgets.main.themes = {
+            "prosegur": "cx-theme-prosegur"
+        };
+
+        (function(o) {
+            var f = function() {
+                    var d = o.location;
+                    o.aTags = o.aTags || [];
+                    for (var i = 0; i < o.aTags.length; i++) {
+                        var oTag = o.aTags[i];
+                        var fs = d.getElementsByTagName(oTag.type)[0],
+                            e;
+                        if (d.getElementById(oTag.id)) return;
+                        e = d.createElement(oTag.type);
+                        e.id = oTag.id;
+                        if (oTag.type == "script") {
+                            e.src = oTag.path;
+                        } else {
+                            e.type = 'text/css';
+                            e.rel = 'stylesheet';
+                            e.href = oTag.path;
+                        }
+                        if (fs) {
+                            fs.parentNode.insertBefore(e, fs);
+                        } else {
+                            d.head.appendChild(e);
+                        }
+                    }
+                },
+                ol = window.onload;
+            if (o.onload) {
+                typeof window.onload != "function" ? window.onload = f : window.onload = function() {
+                    ol();
+                    f();
+                }
+            } else f();
+        })({
+            location: document,
+            onload: false,
+            aTags: [{
+                type: "script",
+                id: "genesys-cx-widget-script",
+                path: "assets/js/chat/widgets.min.js"
+            }, {
+                type: "link",
+                id: "genesys-cx-widget-styles",
+                path: "assets/css/widgets.min.css"
+            }]
+        });
+    </script>
+
+</head>
+<body>
+    <div class="page-container row-fluid">
+
+        <!-- Sticky Header Initial -->
+        <div class="header-prosegur sticky-header sticky-header-initial">
+            <div class="menu-left hidden"></div>
+            <div class="logo inline">
+                <a href="#">
+                    <img src="assets/img/logo.png">
+                </a>
+            </div>
+            <div class="menu-right">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#">
+                            <i class="sticky_icon phone_call"></i>
+                            <a href="tel:902577999"><h3><strong>902 577 999</strong></h3></a>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal">
+                            <i class="sticky_icon phone_callback"></i>
+                            <h3>
+								<span>Deja tus datos,</span>
+								<u><strong>TE LLAMAMOS</strong></u>
+							</h3>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>	
+
+
+        <!-- Sticky Header -->
+        <div class="header-prosegur sticky-header sticky-header-fixed">
+            <div class="menu-left hidden"></div>
+            <div class="logo inline">
+                <a href="#">
+                    <img src="assets/img/logo.png">
+                </a>
+            </div>
+            <div class="menu-right">
+                <ul class="list-inline">
+                    <li>
+                        <a href="#">
+                            <i class="sticky_icon phone_call"></i>
+                            <a href="tel:902577999"><h3><strong>902 577 999</strong></h3></a>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal">
+                            <i class="sticky_icon phone_callback"></i>
+                            <h3>
+								<span>Deja tus datos,</span>
+								<u><strong>TE LLAMAMOS</strong></u>
+							</h3>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- Sticky Footer -->
+        <div class="sticky-footer center-text">
+            <ul class="list-inline">
+                <li>
+                    <i class="small_icon sticky_icon phone_call_white"></i>
+                    <a href="tel:902577999"> <span class="tel"><h3><strong>902 577 999</strong></h3></a>
+                </li>
+                <li>
+                	<a href="#" data-toggle="modal" data-target="#myModal">
+	                    <i class="small_icon sticky_icon phone_callback_white"></i>
+	                    <h3 class="left-text">
+							<span>Deja tus datos,</span>
+							<u><strong>TE LLAMAMOS</strong></u>
+						</h3>
+					</a>
+                </li>
+            </ul>
+
+        </div>
+		
+		<!-- CONTENIDO DEL SITIO -->
+		<div class="page-content full-page landing-page-content">
+
+            <div class="container-fluid no-padding no-margin">
+                <div class="row no-padding no-margin">
+                    <div class="col-lg-12 no-padding no-margin">
+                        <!-- COMIENZO DEL MODULO CARROUSEL 47 -->
+                        <div class="carrousel-47 flexslider carousel">
+                            <!-- Slider -->
+                            <ul class="slides">
+                                <!-- Slide -->
+                                <li>
+                                    <!-- Form Desktop -->
+                                    <div class="carrousel-principal" style="background-image: url(assets/img/prueba.jpg);">
+                                        <div class="container content">
+                                            <div class="row">
+                                                <div class="col-lg-offset-7 col-lg-5 col-md-offset-6 col-md-6 col-sm-12 col-xs-12">
+                                                    <div class="form-container-negro form-container-negro-2">
+                                                        <div class="row form-row form-container">
+                                                            <form action="#" method="post">
+                                                                <div class="col-md-12">
+                                                                    <h1>Contenido 1</h1>
+                                                                    <p>Protegé tu hogar o comercio con los que más saben de seguridad.</p>
+                                                                    <h4>LLamanos<span class="tel"> 1-902-577-999 </span></h4>
+                                                                    <div class="divisor"></div>
+                                                                    <h4>Te llamamos</h4>
+                                                                    <input type="text" class="form-control" placeholder="Nombre">
+                                                                    <input type="text" class="form-control" placeholder="Telefono">
+                                                                    <input class="form-control" type="email" name="email" placeholder="Email">
+                                                                    <div class="checkbox check-default">
+                                                                        <input id="checkbox1-47" type="checkbox" value="1">
+                                                                        <label for="checkbox1-47">
+                                                                            <p class="terms">Acepto los <a href="#"><u>términos y condiciones de uso</u></a></p>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <a href="#">
+                                                                        <button type="submit" class="btn btn-block btn-prosegur">Enviar</button>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="divisor"></div>
+                                                                    <a href="#" class="btn-solicita">SOLICITÁ INFORMACIÓN POR E-MAIL
+																	<span class="mas-info"><i class="fa fa-caret-right"></i></span></a>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Form Mobile -->
+                                    <div class="row cabezal-seccion-mobile cabezal-seccion-mobile-2">
+                                        <div class="col-sm-12">
+                                            <div class="form-container-negro form-container-negro-2">
+                                                <div class="row form-row form-container">
+                                                    <form action="#" method="post">
+                                                        <div class="col-md-12">
+                                                            <h1>Contenido 1</h1>
+                                                            <p>Protegé tu hogar o comercio con quienes más saben de seguridad.</p>
+                                                            <h4>Llámanos<span class="tel"> 1-902-577-999 </span></h4>
+                                                            <div class="divisor"></div>
+                                                            <h4>Te llamamos</h4>
+                                                            <input type="text" class="form-control" placeholder="Nombre">
+                                                            <input type="text" class="form-control" placeholder="Telefono">
+                                                            <input class="form-control" type="email" name="email" placeholder="Email">
+                                                            <div class="checkbox check-default">
+                                                                <input id="checkbox1-48" type="checkbox" value="1">
+                                                                <label for="checkbox1-48">
+                                                                    <p class="terms">Acepto los <a href="#"><u>términos y condiciones de uso</u></a></p>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <a href="#">
+                                                                <button type="submit" class="btn btn-block btn-prosegur">Enviar</button>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="divisor"></div>
+                                                            <a href="#" class="btn-solicita">SOLICITÁ INFORMACIÓN POR E-MAIL
+															<span class="mas-info"><i class="fa fa-caret-right"></i></span></a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <!-- Slider -->
+                        </div>
+
+                        <!-- FIN DEL MODULO CARROUSEL 47 -->
+                    </div>
+                </div>
+            </div>
+
+
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<!-- COMIENZO MODULO ELEMENTOS -->
+							<h1>H1. Heading</h1>
+							<div class="divisor"></div>
+							<h3>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus. Sed eu purus a nibh maximus maximus. Mauris dapibus luctus aliquet.</h3>
+							<div class="divisor"></div>
+							<p>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus. Sed eu purus a nibh maximus maximus. Mauris dapibus luctus aliquet. Quisque efficitur, elit sit amet iaculis tristique, magna arcu posuere dolor, ac laoreet dui tortor ut massa. Nunc eget rhoncus lorem. Consectetur adipiscing elit. Nam quis tincidunt lacus. Sed eu purus a nibh maximus maximus. Mauris dapibus luctus aliquet. Quisque efficitur, <a href="#"><u>elit sit amet</u></a> iaculis tristique, magna arcu posuere dolor, ac laoreet dui tortor ut massa. Nunc eget rhoncus lorem. Nunc eget rhoncus lorem. Consectetur adipiscing elit. Nam quis tincidunt lacus. Sed eu purus a nibh maximus maximus. Mauris dapibus luctus aliquet. Quisque efficitur, elit sit amet iaculis tristique, magna arcu posuere dolor, ac laoreet dui tortor ut massa. Nunc eget rhoncus lorem.</p>
+							<p>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus. Sed eu purus a nibh maximus maximus. Mauris dapibus luctus aliquet. Quisque efficitur, elit sit amet iaculis tristique, magna arcu posuere dolor, ac laoreet dui tortor ut massa. Nunc eget rhoncus lorem.</p>
+							<br>
+							<h2>H2. Heading</h2>
+							<h3>H3. Heading</h3>
+							<p>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus. Sed eu purus a nibh maximus maximus. Mauris dapibus luctus aliquet. Quisque efficitur, elit sit amet iaculis tristique, magna arcu posuere dolor, ac laoreet dui tortor ut massa. Nunc eget rhoncus lorem.</p>
+							<p>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus. Sed eu purus a nibh maximus maximus. Mauris dapibus luctus aliquet. Quisque efficitur, elit sit amet iaculis tristique, magna arcu posuere dolor, ac laoreet dui tortor ut massa. Nunc eget rhoncus lorem.</p>
+							<ul class="lista-prosegur">
+								<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+								<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+								<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+								<ul class="sublista-prosegur">
+									<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+									<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+									<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+								</ul>
+							</ul>
+							<br>
+							<p>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus. Sed eu purus a nibh maximus maximus. Mauris dapibus luctus aliquet. Quisque efficitur, elit sit amet iaculis tristique, magna arcu posuere dolor, ac laoreet dui tortor ut massa. Nunc eget rhoncus lorem.</p>
+							<br>
+							<h4><b>H4. Heading</b></h4>
+							<p>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus. Sed eu purus a nibh maximus maximus. Mauris dapibus luctus aliquet. Quisque efficitur, elit sit amet iaculis tristique, magna arcu posuere dolor, ac laoreet dui tortor ut massa. Nunc eget rhoncus lorem.</p>
+							<br>
+
+							<h4><b>H4. Heading</b></h4>
+							<ul class="lista-prosegur">
+								<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+								<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+								<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+							</ul>
+							<br>
+
+							<h4><b>H4. Heading</b></h4>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<ul class="lista-prosegur">
+											<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+											<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+											<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel dui at tortor commodo commodo. Pellentesque vestibulum pretium mauris, et pulvinar nulla laoreet fringilla. Morbi iaculis, erat sit amet viverra accumsan, odio arcu condimentum ante, vel consectetur enim enim a sem.</li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<ul class="lista-prosegur">
+											<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus. Consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+											<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+											<li>Lorem ipsum dolor <b>sit amet</b>, consectetur adipiscing elit. Nam quis tincidunt lacus.</li>
+									</ul>
+								</div>
+							</div>
+
+							
+						<!-- FIN MODULO ELEMENTOS -->
+					</div>
+				</div>
+			</div> 
+		</div>
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form action="#" method="post">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h2>Te llamamos</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row form-row">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                        </div>
+
+
+						<div class="checkbox check-default">
+							<input id="checkbox1-47" type="checkbox" value="1">
+							<label for="checkbox1-47"><p class="terms"><span style="font-size:12px;">He leído y declaro conocer la <a href="https://www.prosegur.es/politica-de-privacidad-alarmas">Política de Privacidad de Prosegur Alarmas</a></span></p></label>
+						</div>
+
+                        <button type="submit" class="btn btn-block btn-prosegur">Enviar</button>
+
+						<div class="form-group form-html horario">
+							<p style="text-align: center;">
+								<span style="font-size:12px;font-family:roboto;">L - V:&nbsp; 9:00 h - 21:00 h ||| S: 9:30 h - 14:30 h</span>
+							</p>
+						</div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CORE -->
+    <script src="assets/plugins/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/boostrapv3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/plugins/breakpoints.js" type="text/javascript"></script>
+    <!-- PLUGINS -->
+    <script src="assets/plugins/flexslider/jquery.flexslider-min.js" type="text/javascript"></script>
+    <!-- CUSTOM -->
+    <script src="assets/js/1-3-4-6-prosegur.min.js" type="text/javascript"></script>
+    <script src="assets/js/45-prosegur.min.js" type="text/javascript"></script>
+    <script src="assets/js/flexslider-oneslide.min.js" type="text/javascript"></script>
+
+    <script src="assets/js/sticky-header-hide-landing.js" type="text/javascript"></script>
+
+</body>
+
+</html>
