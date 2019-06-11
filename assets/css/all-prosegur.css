@@ -38728,7 +38728,7 @@ map-fullwidth {
 
 @media(max-width:425px) {
     .sticky-footer ul li{
-        padding: 0 15px;
+        padding: 0 4px 0 0;
     }
 
     .sticky-footer ul li.center-with-chat {
@@ -38737,10 +38737,6 @@ map-fullwidth {
 }
 
 @media(max-width:375px) {
-    .sticky-footer ul li {
-        padding: 0 7px;
-    }
-
     .sticky-footer h3{
         font-size: 16px;
         line-height: 19px;
@@ -38748,10 +38744,6 @@ map-fullwidth {
 }
 
 @media(max-width:328px) {
-    .sticky-footer ul li {
-        padding: 0 4px;
-    }
-
     .sticky-footer h3{
         font-size: 15px;
     }
