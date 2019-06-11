@@ -5926,10 +5926,10 @@ screen and (-ms-high-contrast:active) {
             position: absolute;
             bottom: 0;
             left: 46px;
-            top: -7px;
+            top: -10px;
             right: 0;
             margin: auto;
-            font-size: 16px;
+            font-size: 18px;
             color: #fff;
         }
 
