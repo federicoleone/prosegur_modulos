@@ -38595,33 +38595,8 @@ map-fullwidth {
     }
 
         i.sticky_icon{
-            width: 28px;
-            height: 28px;
-            background: url(../img/phone-stickyheader.png);
             display: inline-block;
         }
-
-            i.sticky_icon.small_icon{
-                width: 20px;
-                height: 20px;
-            }
-
-        i.phone_call{
-            background-position: -7px -7px;
-        }
-
-        i.phone_call_white{
-            background-position: -7px -50px;
-        }
-
-        i.phone_callback{
-            background-position: -51px -7px;
-        }
-
-        i.phone_callback_white{
-            background-position: -37px -50px;
-        }
-
 
     .sticky-header h3 span{
         font-size: 18px;
@@ -38687,6 +38662,9 @@ map-fullwidth {
     display: none;
     opacity: 1;
     transition: all .1s linear 0s;
+    -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.4);
 }
 
     .sticky-footer.keyboard_hidden{
@@ -38724,7 +38702,7 @@ map-fullwidth {
 
     .sticky-footer h3{
         font-size: 17px;
-        line-height: 23px;
+        line-height: 19px;
         text-align: left;
     }
 
@@ -38753,12 +38731,8 @@ map-fullwidth {
         padding: 0 15px;
     }
 
-    .sticky-footer ul li:first-child {
-        margin-left: 35px;
-    }
-
-    .sticky-footer ul li:only-child {
-        margin-left: 0;
+    .sticky-footer ul li.center-with-chat {
+        margin-left: 25%;
     }
 }
 
@@ -38769,6 +38743,7 @@ map-fullwidth {
 
     .sticky-footer h3{
         font-size: 16px;
+        line-height: 19px;
     }
 }
 
@@ -38779,9 +38754,5 @@ map-fullwidth {
 
     .sticky-footer h3{
         font-size: 15px;
-    }
-
-    .sticky-footer ul li:first-child {
-        margin-left: 40px;
     }
 }

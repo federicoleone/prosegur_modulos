@@ -5909,34 +5909,36 @@ screen and (-ms-high-contrast:active) {
         fill: #fff;
     }
 
-@media(max-width:375px) {
-    .cx-side-button-group{
-        width: 30px;
-        height: 30px;
-        bottom: 12px;
-    }    
+        .cx-widget.cx-webchat-chat-button:before{
+            content: "";
+            width: 1px;
+            height: 38px;
+            background-color: #fff;
+            position: absolute;
+            left: 100px;
+            top: -1px;
+        }
 
-    .cx-side-button-group{
-        left: 10px;
-    }
-}
-
-/*
         .cx-widget.cx-webchat-chat-button:after{
             content: "Chat";
             width: 26px;
             height: 16px;
             position: absolute;
-            bottom: -8px;
-            left: 0;
+            bottom: 0;
+            left: 46px;
+            top: -7px;
             right: 0;
             margin: auto;
-            font-size: 12px;
+            font-size: 16px;
+            color: #fff;
         }
-*/
 
         .cx-widget.cx-webchat-chat-button .cx-icon{
-            width: 36px;
+            width: 38px;
+            border: 1px #fff solid;
+            height: 38px;
+            border-radius: 100%;
+            padding: 5px;
         }
 
     .cx-chat-button-label{
@@ -5950,6 +5952,19 @@ screen and (-ms-high-contrast:active) {
     }
 
 }
+
+@media(max-width:375px) {
+    .cx-side-button-group{
+        width: 30px;
+        height: 30px;
+        bottom: 13px;
+    }    
+
+    .cx-side-button-group{
+        left: 10px;
+    }
+}
+
 
 .cx-widget.cx-side-button-group:hover{
     z-index: 100 !important;
