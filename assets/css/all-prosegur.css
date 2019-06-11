@@ -38584,6 +38584,8 @@ map-fullwidth {
 
     .sticky-header i,
     .sticky-header h3{
+        font-size: 20px;
+        line-height: 21px;
         color: #2d2e30;
         display: inline-block;
         vertical-align: middle;
@@ -38726,7 +38728,7 @@ map-fullwidth {
     }
 }
 
-@media(max-width:425px) {
+@media(max-width:550px) {
     .sticky-footer ul li{
         padding: 0 4px 0 0;
     }
