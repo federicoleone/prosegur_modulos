@@ -38708,6 +38708,11 @@ map-fullwidth {
         text-align: left;
     }
 
+        .sticky-footer h3.tel{
+            font-size: 19px;
+            line-height: 22px;
+        }
+
         .sticky-footer h3 span{
             display: block;
         }
