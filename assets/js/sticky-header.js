@@ -25,6 +25,11 @@ $(document).ready(function() {
    	   $('.cx-side-button-group').show();
 	});
 
+
+    $('.sticky-header-fixed').appendTo('.page-container');
+    $('.sticky-footer').appendTo('.page-container');
+
+
 /*
 	// Hide Header on on scroll down
 	var didScroll;
